@@ -66,3 +66,4 @@ function scoreCombo(cards) {
 
 exports.evalResults = evalResults
 exports.evaluate = evaluate
+exports.scoreCombo = scoreCombo
