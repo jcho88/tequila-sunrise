@@ -1,0 +1,889 @@
+{
+  "active_player": "Battlebot",
+  "active_player_hand": ["Y9", "P1"],
+  "opposing_player": "BleepBloop",
+  "flags": [
+    {
+      "id": 1,
+      "claimed_by": "BleepBloop",
+      "first_to_complete": "BleepBloop",
+      "cards": {
+        "BleepBloop": ["P4", "P6", "Y6"],
+        "Battlebot": ["R3", "O3", "Y5"]
+      }
+    },
+    {
+      "id": 2,
+      "first_to_complete": "Battlebot",
+      "cards": {
+        "BleepBloop": ["O1", "O9", "B5"],
+        "Battlebot": ["R8", "B6", "Y3"]
+      }
+    },
+    {
+      "id": 3,
+      "claimed_by": "Battlebot",
+      "first_to_complete": "BleepBloop",
+      "cards": {
+        "BleepBloop": ["R4", "P5", "O4"],
+        "Battlebot": ["G7", "B9", "G9"]
+      }
+    },
+    {
+      "id": 4,
+      "claimed_by": "BleepBloop",
+      "first_to_complete": "Battlebot",
+      "cards": {
+        "BleepBloop": ["O7", "Y8", "O8"],
+        "Battlebot": ["B4", "R5", "P9"]
+      }
+    },
+    {
+      "id": 5,
+      "first_to_complete": "Battlebot",
+      "cards": { "BleepBloop": ["R7", "O2"], "Battlebot": ["R6", "Y1", "R1"] }
+    },
+    {
+      "id": 6,
+      "first_to_complete": "BleepBloop",
+      "cards": {
+        "BleepBloop": ["B8", "G5", "Y4"],
+        "Battlebot": ["R2", "G1", "P1"]
+      }
+    },
+    {
+      "id": 7,
+      "claimed_by": "Battlebot",
+      "first_to_complete": "Battlebot",
+      "cards": {
+        "BleepBloop": ["O6", "P7", "G2"],
+        "Battlebot": ["Y7", "P8", "R9"]
+      }
+    },
+    {
+      "id": 8,
+      "claimed_by": "Battlebot",
+      "first_to_complete": "Battlebot",
+      "cards": {
+        "BleepBloop": ["Y2", "B2", "G3"],
+        "Battlebot": ["P3", "B1", "B7"]
+      }
+    },
+    {
+      "id": 9,
+      "first_to_complete": "BleepBloop",
+      "cards": { "BleepBloop": ["G6", "B3", "G4"], "Battlebot": ["P2", "O5"] }
+    }
+  ],
+  "game_id": 215818,
+  "move_number": 52,
+  "play_history": [
+    {
+      "move_num": 1,
+      "time": "2020-08-11 00:04:54",
+      "action": "GAME_START",
+      "message": "Game start. BleepBloop selected as first player.",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 1,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 3,
+      "card": "R4"
+    },
+    {
+      "move_num": 1,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 2,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 4,
+      "card": "B4"
+    },
+    {
+      "move_num": 2,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 3,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 1,
+      "card": "P4"
+    },
+    {
+      "move_num": 3,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 4,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 4,
+      "card": "R5"
+    },
+    {
+      "move_num": 4,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 5,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 2,
+      "card": "O1"
+    },
+    {
+      "move_num": 5,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 6,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 9,
+      "card": "P2"
+    },
+    {
+      "move_num": 6,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 7,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 3,
+      "card": "P5"
+    },
+    {
+      "move_num": 7,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 8,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 2,
+      "card": "R8"
+    },
+    {
+      "move_num": 8,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 9,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 1,
+      "card": "P6"
+    },
+    {
+      "move_num": 9,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 10,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 8,
+      "card": "P3"
+    },
+    {
+      "move_num": 10,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 11,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 5,
+      "card": "R7"
+    },
+    {
+      "move_num": 11,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 12,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 2,
+      "card": "B6"
+    },
+    {
+      "move_num": 12,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 13,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 8,
+      "card": "Y2"
+    },
+    {
+      "move_num": 13,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 14,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 7,
+      "card": "Y7"
+    },
+    {
+      "move_num": 14,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 15,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 7,
+      "card": "O6"
+    },
+    {
+      "move_num": 15,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 16,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 6,
+      "card": "R2"
+    },
+    {
+      "move_num": 16,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 17,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 8,
+      "card": "B2"
+    },
+    {
+      "move_num": 17,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 18,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 5,
+      "card": "R6"
+    },
+    {
+      "move_num": 18,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 19,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 1,
+      "card": "Y6"
+    },
+    {
+      "move_num": 19,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 20,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 8,
+      "card": "B1"
+    },
+    {
+      "move_num": 20,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 21,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 4,
+      "card": "O7"
+    },
+    {
+      "move_num": 21,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 22,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 4,
+      "card": "P9"
+    },
+    {
+      "move_num": 22,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 23,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 6,
+      "card": "B8"
+    },
+    {
+      "move_num": 23,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 24,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 2,
+      "card": "Y3"
+    },
+    {
+      "move_num": 24,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 25,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 9,
+      "card": "G6"
+    },
+    {
+      "move_num": 25,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 26,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 5,
+      "card": "Y1"
+    },
+    {
+      "move_num": 26,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 27,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 4,
+      "card": "Y8"
+    },
+    {
+      "move_num": 27,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 28,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 9,
+      "card": "O5"
+    },
+    {
+      "move_num": 28,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 29,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 5,
+      "card": "O2"
+    },
+    {
+      "move_num": 29,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 30,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 8,
+      "card": "B7"
+    },
+    {
+      "move_num": 30,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 31,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 6,
+      "card": "G5"
+    },
+    {
+      "move_num": 31,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 32,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 5,
+      "card": "R1"
+    },
+    {
+      "move_num": 32,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 33,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 9,
+      "card": "B3"
+    },
+    {
+      "move_num": 33,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 34,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 3,
+      "card": "G7"
+    },
+    {
+      "move_num": 34,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 35,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 4,
+      "card": "O8"
+    },
+    {
+      "move_num": 35,
+      "time": "2020-08-11 00:04:54",
+      "action": "FLAG_CLAIMED",
+      "player": "BleepBloop",
+      "flag_id": 4
+    },
+    {
+      "move_num": 35,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 36,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 6,
+      "card": "G1"
+    },
+    {
+      "move_num": 36,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 37,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 3,
+      "card": "O4"
+    },
+    {
+      "move_num": 37,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 38,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 7,
+      "card": "P8"
+    },
+    {
+      "move_num": 38,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 39,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 7,
+      "card": "P7"
+    },
+    {
+      "move_num": 39,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 40,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 7,
+      "card": "R9"
+    },
+    {
+      "move_num": 40,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 41,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 9,
+      "card": "G4"
+    },
+    {
+      "move_num": 41,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 42,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 3,
+      "card": "B9"
+    },
+    {
+      "move_num": 42,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 43,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 7,
+      "card": "G2"
+    },
+    {
+      "move_num": 43,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 44,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 1,
+      "card": "R3"
+    },
+    {
+      "move_num": 44,
+      "time": "2020-08-11 00:04:54",
+      "action": "FLAG_CLAIMED",
+      "player": "Battlebot",
+      "flag_id": 7
+    },
+    {
+      "move_num": 44,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 45,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 8,
+      "card": "G3"
+    },
+    {
+      "move_num": 45,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 46,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 3,
+      "card": "G9"
+    },
+    {
+      "move_num": 46,
+      "time": "2020-08-11 00:04:54",
+      "action": "FLAG_CLAIMED",
+      "player": "Battlebot",
+      "flag_id": 3
+    },
+    {
+      "move_num": 46,
+      "time": "2020-08-11 00:04:54",
+      "action": "FLAG_CLAIMED",
+      "player": "Battlebot",
+      "flag_id": 8
+    },
+    {
+      "move_num": 46,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 47,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 6,
+      "card": "Y4"
+    },
+    {
+      "move_num": 47,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 48,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 1,
+      "card": "O3"
+    },
+    {
+      "move_num": 48,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 49,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 2,
+      "card": "O9"
+    },
+    {
+      "move_num": 49,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    },
+    {
+      "move_num": 50,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "Battlebot",
+      "flag_id": 1,
+      "card": "Y5"
+    },
+    {
+      "move_num": 50,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "Battlebot"
+    },
+    {
+      "move_num": 51,
+      "time": "2020-08-11 00:04:54",
+      "action": "CARD_PLAYED",
+      "player": "BleepBloop",
+      "flag_id": 2,
+      "card": "B5"
+    },
+    {
+      "move_num": 51,
+      "time": "2020-08-11 00:04:54",
+      "action": "FLAG_CLAIMED",
+      "player": "BleepBloop",
+      "flag_id": 1
+    },
+    {
+      "move_num": 51,
+      "time": "2020-08-11 00:04:54",
+      "action": "MOVE_COMPLETE",
+      "message": "Player says \"You're embarrassing yourself!\"",
+      "player": "BleepBloop"
+    }
+  ]
+}
