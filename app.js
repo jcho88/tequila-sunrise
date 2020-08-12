@@ -9,8 +9,6 @@ const bodyparser = require("body-parser");
 
 const port = process.env.PORT || 8080;
 
-const { flag, player, card } = require('./index');
-
 process.on('SIGINT', function() {
     process.exit();
 });
@@ -33,7 +31,6 @@ app.post("/game/:gameid", (req, res) => {
 // Called when it is your turn. Game state is passed in the request,
 // and the response should contain your move.
 app.post("/game/:gameid/state", (req, res) => {
-    console.log("Request body = ",req.body);
     const gameState = req.body
 
     const move = client.move(gameState)
