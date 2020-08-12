@@ -1,6 +1,7 @@
 'use strict';
 
-const client = require("./random_client")
+// const client = require("./random_client")
+const client = require("./smarter_client")
 const express = require("express");
 
 const app = express();
