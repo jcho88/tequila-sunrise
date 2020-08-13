@@ -293,6 +293,12 @@ function getTwoCombos(hand) {
 const getBestMove = (flagStatus) => {
   // console.log(flagStatus);
   // okay best move lets see if position 3 is empty
+ 
+//   flagStatus.forEach(flag => {
+//     if(flag.opponentScore > flag.score) {
+//         flag.score = 0;
+//         }
+//     })
   const onlyPossibilities = flagStatus
     .filter((e) => e.isPossibility)
     .sort(function (a, b) {
@@ -306,7 +312,13 @@ const getBestMove = (flagStatus) => {
 
   let bestMove;
 
+  let flagToPlay;
+  
+
+
   if (sureThang.length) {
+
+
     let viableFlags = sureThang.filter((f) => f.score == sureThang[0].score);
     // if flag3 is in viableFlags, place 3
     // else if flag7 is in viableFlags, place 7
@@ -317,6 +329,7 @@ const getBestMove = (flagStatus) => {
     // place 8
     // place 1
     // place 9
+
 
     const priorityFlags = [3, 7, 5, 4, 6, 2, 8, 1, 9];
     const flagsToPlay = viableFlags.filter((v) =>
@@ -330,6 +343,7 @@ const getBestMove = (flagStatus) => {
         }
       });
     });
+
     bestMove = orderedFlagsToPlay[0];
   } else {
     // bestMove = onlyPossibilities[0];
@@ -370,13 +384,9 @@ function findBestHand(player, hand, openFlags, moveNumber, gameState) {
     //
     // let opponentScore;
     if (opponentCardsOnFlag.length === 3) {
-      opponentScore = getCompleteSets({ cardSets: [opponentCardsOnFlag] }, []);
+      opponentScore = scoreCombo(opponentCardsOnFlag);
     } else if (opponentCardsOnFlag.length === 2) {
-      opponentScore = getTwoCardSets(
-        { cardSets: [opponentCardsOnFlag] },
-        [],
-        gameState
-      );
+      opponentScore = twoCardScoreCombo(opponentCardsOnFlag, gameState);
     } else {
       if(opponentCardsOnFlag.length === 0) {
         opponentScore = 0;
@@ -384,11 +394,13 @@ function findBestHand(player, hand, openFlags, moveNumber, gameState) {
         opponentScore = parseInt(opponentCardsOnFlag[0].split('')[1]);
       }
     }
-
-
+    if(Array.isArray(opponentScore)) {
+        console.log("FLAG = ", flag);
+        opponentScore = 0;
+    }
     let play;
-    if (moveNumber < 15) {
-      if (sets[0].score > 400) {
+    if (moveNumber < 10) {
+      if (sets[0].score > 300) {
         play = sets[0].cardSet.filter((card) => {
           return hand.includes(card);
         });
@@ -426,8 +438,8 @@ function findBestHand(player, hand, openFlags, moveNumber, gameState) {
       }
     }
 
-    if (moveNumber < 30 && moveNumber >= 15) {
-      if (sets[0].score > 300) {
+    if (moveNumber < 20 && moveNumber >= 10) {
+      if (sets[0].score > 200) {
         //console.log("score over 200", sets[0]);
         play = sets[0].cardSet.filter((card) => {
           return hand.includes(card);
@@ -466,8 +478,8 @@ function findBestHand(player, hand, openFlags, moveNumber, gameState) {
       }
     }
 
-    if (moveNumber < 45 && moveNumber >= 30) {
-      if (sets[0].score > 200) {
+    if (moveNumber < 40 && moveNumber >= 20) {
+      if (sets[0].score > 100) {
         //console.log("score over 200", sets[0]);
         play = sets[0].cardSet.filter((card) => {
           return hand.includes(card);
@@ -506,7 +518,7 @@ function findBestHand(player, hand, openFlags, moveNumber, gameState) {
       }
     }
 
-    if (moveNumber >= 45) {
+    if (moveNumber >= 40) {
       if (sets[0].score > 0) {
         //console.log("score over 200", sets[0]);
         play = sets[0].cardSet.filter((card) => {
@@ -529,9 +541,9 @@ function findBestHand(player, hand, openFlags, moveNumber, gameState) {
         // console.log('play', incompleteSets[0].cardSet[0], 'flag:' + (index + 1));
       }
     }
-    // console.log("opponentCardsOnFlag", opponentCardsOnFlag);
-    // console.log("opponentScore", opponentScore);
-    // console.log("opponentIsPossibility", opponentIsPossibility);
+    console.log("opponentCardsOnFlag", opponentCardsOnFlag);
+    console.log("opponentScore", opponentScore);
+    console.log("opponentIsPossibility", opponentIsPossibility);
   });
 
   return getBestMove(flagStatus);
