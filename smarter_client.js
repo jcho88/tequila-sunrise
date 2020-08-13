@@ -87,7 +87,8 @@ function twoCardScoreCombo(cards, gameState) {
   const isFlush = new Set(cardColors).size == 1;
   const isStraight =
     Math.max(...cardValues) - Math.min(...cardValues) == 1;
-  const isTriple = new Set(cardValues.size == 1);
+  
+  const isTriple = new Set(cardValues).size === 1; //);
 
 
   let flushPossible = false;
@@ -111,11 +112,13 @@ function twoCardScoreCombo(cards, gameState) {
 
     if(unplayedCards.map((c) => c[0]).filter((color) => {
         return color === requiredColor;
-    }) >= 2) {
+    }).length >= 2) {
         flushPossible = true;
     }
   }
-
+  // console.log(cards);
+  // console.log('flushPossible', flushPossible);
+  // console.log('-------------');
   // apply new scoring based on condition above
 
   if (isFlush && flushPossible) {
@@ -130,7 +133,7 @@ function twoCardScoreCombo(cards, gameState) {
         requiredCards.push(cardColors[0] + (Math.max(...cardValues) + 1));
         requiredCards.push(cardColors[0] + (Math.min(...cardValues) - 1));
         // check if any cards in unplayedCards have cards that match those in requiredCards
-        console.log("REQUIRED CARDS = ", requiredCards + " UNPLAYED CARDS VALUES = ", unplayedCardsValues)
+        // console.log("REQUIRED CARDS = ", requiredCards + " UNPLAYED CARDS VALUES = ", unplayedCardsValues)
         if (
           unplayedCards.includes(requiredCards[0]) &&
           unplayedCards.includes(requiredCards[1])
@@ -149,16 +152,15 @@ function twoCardScoreCombo(cards, gameState) {
 
     if(unplayedCards.map((c) => c[1]).filter((value) => {
         return value === requiredValue;
-    }) >= 2) {
+    }).length >= 2) {
         triplePossible = true;
+    }
+    if(triplePossible) {
+      return twoCardComboTypes.THREEOFKIND + cardSum;
     }
   }
 
-  if(isTriple && triplePossible) {
-    return twoCardComboTypes.THREEOFKIND + cardSum;
-  } else {
-    return twoCardComboTypes.THREEOFKIND/2 + cardSum;
-  }
+
 
   // Straight
   if (isStraight) {
@@ -237,6 +239,10 @@ const getTwoCardSets = (combinations, mandatory, gameState) => {
       score: twoCardScoreCombo(cardSet, gameState),
     });
   });
+
+  // console.log('scores from two cards', scores.sort(function (a, b) {
+  //   return b.score - a.score;
+  // }))
   return scores.sort(function (a, b) {
     return b.score - a.score;
   });
@@ -282,7 +288,10 @@ function getTwoCombos(hand) {
   };
 }
 
+
+
 const getBestMove = (flagStatus) => {
+  // console.log(flagStatus);
   // okay best move lets see if position 3 is empty
   const onlyPossibilities = flagStatus
     .filter((e) => e.isPossibility)
@@ -379,7 +388,7 @@ function findBestHand(player, hand, openFlags, moveNumber, gameState) {
 
     let play;
     if (moveNumber < 15) {
-      if (sets[0].score > 300) {
+      if (sets[0].score > 400) {
         play = sets[0].cardSet.filter((card) => {
           return hand.includes(card);
         });
@@ -418,7 +427,7 @@ function findBestHand(player, hand, openFlags, moveNumber, gameState) {
     }
 
     if (moveNumber < 30 && moveNumber >= 15) {
-      if (sets[0].score > 200) {
+      if (sets[0].score > 300) {
         //console.log("score over 200", sets[0]);
         play = sets[0].cardSet.filter((card) => {
           return hand.includes(card);
@@ -458,7 +467,7 @@ function findBestHand(player, hand, openFlags, moveNumber, gameState) {
     }
 
     if (moveNumber < 45 && moveNumber >= 30) {
-      if (sets[0].score > 100) {
+      if (sets[0].score > 200) {
         //console.log("score over 200", sets[0]);
         play = sets[0].cardSet.filter((card) => {
           return hand.includes(card);
@@ -530,7 +539,7 @@ function findBestHand(player, hand, openFlags, moveNumber, gameState) {
 }
 
 function move(gameState) {
-  console.log("entered move function");
+  // console.log("entered move function");
   // Player names. Used as keys into the card dictionary on the flags.
   const player = gameState.active_player;
   const opponent = gameState.opposing_player;
@@ -551,7 +560,7 @@ function move(gameState) {
   // const selectedFlag = openFlags[0]
 
   // Select best card and flag to play based on scoreCombo of all possible hands
-  console.log("calling findBestHand function");
+  // console.log("calling findBestHand function");
   const bestMove = findBestHand(
     player,
     hand,
@@ -588,13 +597,13 @@ function move(gameState) {
     }
   });
 
-  // Return move and any claims
-  console.log({
-    flag_id: selectedFlag.id,
-    card: selectedCard,
-    claimed_flag_ids: flagsToClaim,
-    trash_talk: "don't even try",
-  });
+  // // Return move and any claims
+  // console.log({
+  //   flag_id: selectedFlag.id,
+  //   card: selectedCard,
+  //   claimed_flag_ids: flagsToClaim,
+  //   trash_talk: "don't even try",
+  // });
 
   return {
     flag_id: selectedFlag.id,
